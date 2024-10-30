@@ -1,0 +1,83 @@
+.seta { /* seta */
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    bottom: 90px;
+    filter: drop-shadow(3px 3px 3px white);
+    animation: blink 2s infinite; /* Controla a animação */
+    cursor: pointer;
+    
+}
+
+@keyframes blink {
+    0% {
+        filter: drop-shadow(3px 3px 3px white) transparent; /* Cor do fundo no início da animação */
+    }
+    50% {
+      filter: drop-shadow(4px 4px 4px rgb(233, 153, 19, 0.5)); /* Cor do fundo no meio da animação */
+    }
+    100% {
+      background-color: transparent; /* Cor do fundo no fim da animação */
+    }
+  }
+
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+.container_rodape {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+}
+
+.container_rodape img {
+    width: 100px;
+    height: 100px;
+}
+
+/* divs do container pai */
+.container_rodape div {
+    width: 20%;
+    min-height: 150px;
+    height: 100px;
+}
+.container_rodape h3 {
+    font-size: 18px;
+}
+
+/* direito autoral */
+.copy {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.copy span {
+    color: #f9db79;
+}
+
+
+/* /////////// responsive ////////////// */
+@media screen and (max-width: 768px) {
+    .container_rodape {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    
+    .container_rodape div {
+        width: 90%;
+        text-align: center;
+    }
+}

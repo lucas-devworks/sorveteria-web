@@ -1,0 +1,91 @@
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+/* banner principal */
+.container_banner {
+    height: 100vh;
+    background-image: url('../../../public/banner-sobre.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_banner h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* container com o texto 'sobre nós' */
+.container_texto {
+    max-width: 1024px;
+    margin: auto;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container_texto h2 {
+    font-size: 30px;
+}
+.container_texto span {
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+}
+.container_texto p {
+    text-align: justify;
+}
+
+/* seção imagens inferior */
+.secao_imagens {
+    width: 100%;
+
+}
+.container_imagens {
+    display: flex;
+}
+.container_imagens div {
+    width: 50%;
+    height: auto;
+}
+.container_imagens div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ////////// responsive ///////////////////////// */
+@media screen and (max-width: 768px) {
+
+    .container_banner h1 {
+        font-size: 60px;
+    }
+
+    .container_imagens { /* imagens inferior */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_imagens div {
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+        display: flex;
+
+    }
+}
+
+
+/* /////// responsive 2 //////////////////////// */
+@media screen and (max-width: 375px) {
+
+    .container_banner h1 {
+        font-size: 50px;
+    }
+}

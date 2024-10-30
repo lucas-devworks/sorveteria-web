@@ -1,0 +1,92 @@
+.main {
+    width: 100%;
+    text-align: center;
+}
+.main h2 {
+    padding: 40px 0;
+}
+
+/* banner principal */
+.container_banner {
+    height: 100vh;
+    background-image: url('../../../public/banner-sabores.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.container_banner h1 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+}
+
+/* container dos cards dos sorvetes */
+.secao_sorvetes {
+    padding: 20px 0;
+
+}
+.container_cards {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*cards*/
+.container_cards img {
+ width: 100%;
+ height: auto;
+}
+.card {
+    box-shadow: 2px 2px 15px 2px silver;
+    border-radius: 5px;
+    height: 390px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+}
+
+.card div {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container_cards h3 {
+    font-size: 18px;
+}
+.container_cards p {
+    font-size: 16px;
+}
+
+/* ////////// responsive ///////////////////////// */
+@media screen and (max-width: 768px) {
+
+    .container_banner h1 {
+        font-size: 70px;
+    }
+
+    .card { /* cards dos sorvetes */
+        width: 95%;
+    }
+    .card div {
+        display: flex;
+        justify-content: center;
+    }
+    .container_cards img {
+        height: auto;
+        width: 300px;
+    }
+}

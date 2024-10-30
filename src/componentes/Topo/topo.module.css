@@ -1,0 +1,58 @@
+.cabecalho {
+    width: 100%;
+    background-color: #f9db79;
+}
+
+.container {
+    margin: auto;
+    padding: 0 20px;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* links */
+.container_links {
+    padding: 10px 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_links a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* /////////////// responsive /////////////////// */
+@media screen and (max-width: 375px) {
+    .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container_links {
+        border-top: 2px solid #a5642d;
+        justify-content: space-between;
+        width: 1024px;
+    }
+    
+}
+
+
+
+
+/* testes */
+.botao {
+    position: fixed;
+    left: 50%;
+}
